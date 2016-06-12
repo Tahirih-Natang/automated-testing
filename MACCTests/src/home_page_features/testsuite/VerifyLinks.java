@@ -24,7 +24,7 @@ public class VerifyLinks {
 		
 		driver.manage().window().maximize();
 		
-		driver.get("http://localhost:8001/");
+		driver.get("http://localhost:8001");
 		
 		List<WebElement> links=driver.findElements(By.tagName("a"));
 		
@@ -67,8 +67,5 @@ public class VerifyLinks {
            
         }
     } 
-	
-	
-	 
 
 }
