@@ -10,6 +10,7 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.testng.annotations.DataProvider;
 import common.CommonCode;
 
@@ -29,6 +30,14 @@ public class Login extends CommonCode {
 		
 		String actualTitle = driver.getTitle();
 		Assert.assertEquals(expectedTitle, actualTitle);
+	}
+	
+	public void VerifyErrormessage(){
+		WebElement submit = driver.findElement(By.xpath("html/body/center/div/form/input[3]"));
+		submit.click();
+		String actual_error = driver.findElement(By.xpath("html/body/center[1]/h4")).getText();
+		String expected_error = "Invalid Login.";
+		Assert.assertEquals(expected_error, actual_error);
 	}
 	
 	@DataProvider(name = "Authentication")

@@ -36,8 +36,8 @@ public class DBTests extends CommonDBTests {
 			String updated = result.getString("updated");
 			System.out.println("id  owner_id  title_post  description_post  link_post created  "
 					+ "                      updated");
-			System.out.print(id + "   " + owner_id + "         " + title_post + "       " 
-			+ description_post + "   " + link_post + "              " + created + "  " + updated);	
+			System.out.print(id + "   " + owner_id + "  " + title_post + " " 
+			+ description_post + "   " + link_post + "  " + created + "  " + updated);	
 		}
 	}
 	

@@ -57,7 +57,7 @@ public class Signup extends CommonCode{
 		
 		expectedTitle = "Notice";	
 		String actualTitle = driver.getTitle();
-		Assert.assertEquals(expectedTitle, actualTitle); //verify?
+		Assert.assertEquals(expectedTitle, actualTitle);
 	}
 	
 	@DataProvider(name = "create")
