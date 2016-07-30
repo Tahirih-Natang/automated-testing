@@ -35,5 +35,9 @@ public class Constants {
 	public static final String addNewPost = "New Post";
 	
 	public static final String sumbitButton = "submit";
+	
+	public static final String ChromeWebDriverPath = "C:\\chromedriver.exe";
+	
+	public static final String IEWebDriverPath = "C:\\IEdriver.exe";
 
 }
