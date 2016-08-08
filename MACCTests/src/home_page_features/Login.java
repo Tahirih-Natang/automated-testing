@@ -1,3 +1,4 @@
+
 /**
  * This class tests the login functionality.
  * 
@@ -5,7 +6,6 @@
  */
 
 package home_page_features;
-
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
@@ -30,14 +30,6 @@ public class Login extends CommonCode {
 		
 		String actualTitle = driver.getTitle();
 		Assert.assertEquals(expectedTitle, actualTitle);
-	}
-	
-	public void VerifyErrormessage(){
-		WebElement submit = driver.findElement(By.xpath("html/body/center/div/form/input[3]"));
-		submit.click();
-		String actual_error = driver.findElement(By.xpath("html/body/center[1]/h4")).getText();
-		String expected_error = "Invalid Login.";
-		Assert.assertEquals(expected_error, actual_error);
 	}
 	
 	@DataProvider(name = "Authentication")
