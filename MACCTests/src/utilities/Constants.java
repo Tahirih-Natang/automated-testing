@@ -10,6 +10,8 @@ public class Constants {
 	
 	public static final String baseURL = "http://localhost:8001";
 	
+	public static final String posts_list = baseURL + "/pcsa/list_posts/";
+	
 	public static final String list_of_posts = baseURL + "/malaria/list_posts/";
 	
 	public static final String defaultUsername = "admin";
@@ -36,8 +38,8 @@ public class Constants {
 	
 	public static final String sumbitButton = "submit";
 	
-	public static final String ChromeWebDriverPath = "C:\\chromedriver.exe";
-	
-	public static final String IEWebDriverPath = "C:\\IEdriver.exe";
+//	public static final String ChromeWebDriverPath = "C:\\chromedriver.exe";
+//	
+//	public static final String IEWebDriverPath = "C:\\IEdriver.exe";
 
 }

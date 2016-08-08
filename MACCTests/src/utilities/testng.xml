@@ -1,9 +1,4 @@
-<suite name="TestNG Test Suite" thread-count="2" parallel="tests">
-
-	<parameter name="browser" value="Chrome" />
-	<parameter name="browser" value="Firefox" />
-	<parameter name="browser" value="IE" />
-	
+<suite name="TestNG Test Suite">
 	<test name="Credentials">
 		<classes> 
 		    <class name="home_page_features.Login"/>
@@ -25,11 +20,11 @@
 	
 	<test name="Regression">
 	    <classes>
-	        <class name="post_features.AddPost"/>
-	        <class name="post_features.CancelAddPost"/>
-	        <class name="post_features.DeletePost"/>
-	        <class name="post_features.EditPost"/>
-	        <class name="post_features.ViewPost"/>
+	        <class name="post_mal_features.AddPost"/>
+	        <class name="post_mal_features.CancelAddPost"/>
+	        <class name="post_mal_features.DeletePost"/>
+	        <class name="post_mal_features.EditPost"/>
+	        <class name="post_mal_features.ViewPost"/>
 	    </classes>	   
 	</test>
 	

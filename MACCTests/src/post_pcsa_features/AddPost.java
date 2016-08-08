@@ -1,10 +1,4 @@
-/**
- * This class tests the Add Post functionality.
- * 
- * @author daisy
- */
-
-package post_mal_features;
+package post_pcsa_features;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
@@ -13,28 +7,27 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import common.DataProviderCommonCode;
 
-public class AddPost extends DataProviderCommonCode {
-		
-	private String expectedURL;
+public class AddPost extends DataProviderCommonCode{
 	
+	private String expectedURL;
+
 	@Test(dataProvider = "post")
 	public void addpostTest(String title, String description) {
 		
-		driver.get(utilities.Constants.list_of_posts);
+		driver.get(utilities.Constants.posts_list);
 		
 		//add a new post
 		WebElement addpostButton = driver.findElement(By.linkText(utilities.Constants.addNewPost));
 		addpostButton.click();
-		WebElement titre = driver.findElement(By.name("title_post"));
-		titre.sendKeys(title);
-		WebElement description_post = driver.findElement(By.name("description_post"));
+		WebElement ttle = driver.findElement(By.name("title"));
+		ttle.sendKeys(title);
+		WebElement description_post = driver.findElement(By.name("description"));
 		description_post.sendKeys(description);
-		WebElement submitButton = driver.findElement(By.xpath("//button[contains(text(), 'Submit')]"));
+		WebElement submitButton = driver.findElement(By.xpath("html/body/div/div/form/div[3]/div/button"));
 		submitButton.click();
-		expectedURL = utilities.Constants.list_of_posts; 
+		expectedURL = utilities.Constants.posts_list; 
 		Assert.assertEquals(expectedURL, driver.getCurrentUrl());
 	}
-	
 	@DataProvider(name = "post")
 	public Object[][] addpostDataProvider() throws Exception {
 		Object[][]connect = utilities.ExcelReader.connect(utilities.Constants.pathTestData,

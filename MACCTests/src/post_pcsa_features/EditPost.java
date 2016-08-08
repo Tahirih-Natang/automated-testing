@@ -1,10 +1,4 @@
-/**
- * This class tests the edit post functionality.
- * 
- * @author daisy
- */
-
-package post_mal_features;
+package post_pcsa_features;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
@@ -14,28 +8,28 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import common.DataProviderCommonCode;
 
-public class EditPost extends DataProviderCommonCode {
+public class EditPost extends DataProviderCommonCode{
 	
-	private String expectedURL; 
-
+	private String expectedURL;
+	
 	@Test(dataProvider = "editPost")
 	public void editpost(String title, String description) {
 		
-		driver.get(utilities.Constants.list_of_posts);
+		driver.get(utilities.Constants.posts_list);
 		try {			
 			WebElement editButton = driver.findElement(By.linkText("Edit"));
 			editButton.click();
-			WebElement titre = driver.findElement(By.name("title_post"));
+			WebElement titre = driver.findElement(By.name("title"));
 			titre.clear();
 			titre.sendKeys(title);
-			WebElement description_post = driver.findElement(By.name("description_post"));
+			WebElement description_post = driver.findElement(By.name("description"));
 			description_post.clear();
 			description_post.sendKeys(description);
-			WebElement submitButton = driver.findElement(By.xpath("//button[contains(text(), 'Submit')]"));
+			WebElement submitButton = driver.findElement(By.xpath("html/body/div/div/form/div[3]/div/button"));
 			submitButton.click();
 			WebElement list = driver.findElement(By.linkText("Back to Post List"));
 			list.click();
-			expectedURL = utilities.Constants.list_of_posts; 
+			expectedURL = utilities.Constants.posts_list; 
 			Assert.assertEquals(expectedURL, driver.getCurrentUrl());
 			}
 			catch(NoSuchElementException e) {
@@ -51,4 +45,6 @@ public class EditPost extends DataProviderCommonCode {
 		Object[][] cellData = utilities.ExcelReader.read(connect);
 		return cellData;	
 	}
+	
+
 }
