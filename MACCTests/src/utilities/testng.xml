@@ -28,6 +28,16 @@
 	    </classes>	   
 	</test>
 	
+	<test name="Regression2">
+	    <classes>
+	        <class name="post_pcsa_features.AddPost"/>
+	        <class name="post_pcsa_features.CancelAddPost"/>
+	        <class name="post_pcsa_features.DeletePost"/>
+	        <class name="post_pcsa_features.EditPost"/>
+	        <class name="post_pcsa_features.ViewPost"/>
+	    </classes>	   
+	</test>
+	
 	<test name="Database">
 	    <classes>
 	        <class name="database_tests.DBTests"/>
