@@ -1,25 +1,27 @@
 package admin;
+
 import commons.CommonCode;
 import org.junit.*;
 import org.openqa.selenium.*;
 
-/*
- * @author Madi Paris
- * Test for New Category UI feature on Categories page
- */
+/**
+ *
+ * Test for new category
+ * @author Madi Vachon
+ **/
 
-public class NewCategory extends CommonCode{
+public class NewCategoryAdmin extends CommonCode{
   private WebDriver driver;
   private String baseUrl;
 
   @Test
-  public void test() {
-    driver.get(baseUrl + "/categories");
-    if(driver.findElement(By.linkText("New Category"))){
-      JUnit.AssertTrue("Found the new category link", true);
-    }
-    else {
-      JUnit.fail("No new category link found");
-    }
+  public void test() throws Exception {
+    driver.get(baseUrl + "/languages");
+    driver.findElement(By.linkText("Categories")).click();
+    driver.findElement(By.cssSelector("i.icon-plus")).click();
+    driver.findElement(By.id("category_name")).clear();
+    driver.findElement(By.id("category_name")).sendKeys("Test");
+    driver.findElement(By.cssSelector("button.button.button--primary")).click();
   }
+
 }

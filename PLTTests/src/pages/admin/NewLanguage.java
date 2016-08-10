@@ -1,12 +1,14 @@
 package admin;
+
 import commons.CommonCode;
 import org.junit.*;
 import org.openqa.selenium.*;
 
-/*
- * @author Madi Paris
- * Test for New language UI feature on the Languages page
- */
+/**
+ *
+ * Test for new language
+ * @author Madi Vachon
+ **/
 
 public class NewLanguage extends CommonCode{
   private WebDriver driver;
@@ -14,12 +16,12 @@ public class NewLanguage extends CommonCode{
 
   @Test
   public void test() throws Exception {
-    driver.get(baseUrl + "/languages");
-    if(driver.findElement(By.linkText("New language"))){
-      JUnit.AssertTrue("Found the new language link", true);
-    }
-    else {
-      JUnit.fail("No new language link found");
-    }
+    driver.get(baseUrl + "/");
+    driver.findElement(By.linkText("Languages")).click();
+    driver.findElement(By.cssSelector("i.icon-plus")).click();
+    driver.findElement(By.id("language_name")).clear();
+    driver.findElement(By.id("language_name")).sendKeys("Test");
+    driver.findElement(By.cssSelector("button.button.button--primary")).click();
   }
+
 }

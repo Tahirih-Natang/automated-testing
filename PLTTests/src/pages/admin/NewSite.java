@@ -1,25 +1,25 @@
 package admin;
+
 import commons.CommonCode;
 import org.junit.*;
 import org.openqa.selenium.*;
 
-/*
- * @author Madi Paris
- * Test for New site UI feature on Sites page
- */
+/**
+ *
+ * Test for new site
+ * @author Madi Vachon
+ **/
 
-public class NewSite extends CommonCode{
+public class NewSite extends CommonCode {
   private WebDriver driver;
   private String baseUrl;
 
   @Test
-  public void test() {
+  public void test() throws Exception {
     driver.get(baseUrl + "/sites");
-    if(driver.findElement(By.linkText("New site"))){
-      JUnit.AssertTrue("Found the new site link", true);
-    }
-    else {
-      JUnit.fail("No new site link found");
-    }
+    driver.findElement(By.cssSelector("i.icon-plus")).click();
+    driver.findElement(By.id("site_name")).clear();
+    driver.findElement(By.id("site_name")).sendKeys("Test");
+    driver.findElement(By.cssSelector("button.button.button--primary")).click();
   }
 }
