@@ -1,4 +1,9 @@
 <suite name="TestNG Test Suite">
+		
+		<parameter name="browser" value="Chrome" />
+		<parameter name="browser" value="Firefox" />
+		<parameter name="browser" value="IE" />
+		
 	<test name="Credentials">
 		<classes> 
 		    <class name="home_page_features.Login"/>
