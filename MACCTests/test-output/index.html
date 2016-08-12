@@ -1,0 +1,1388 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-TestNG_Test_Suite">
+              <span class="suite-name border-skipped">TestNG Test Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-TestNG_Test_Suite">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-TestNG_Test_Suite">
+                    <span class="test-stats">6 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-TestNG_Test_Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-TestNG_Test_Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-TestNG_Test_Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-TestNG_Test_Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-TestNG_Test_Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">43 methods,  43 skipped,  </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-TestNG_Test_Suite" class="hide-methods skipped suite-TestNG_Test_Suite"> (hide)</a> <!-- hide-methods skipped suite-TestNG_Test_Suite -->
+                      <a href="#" panel-name="suite-TestNG_Test_Suite" class="show-methods skipped suite-TestNG_Test_Suite"> (show)</a> <!-- show-methods skipped suite-TestNG_Test_Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-TestNG_Test_Suite">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestNG_Test_Suite" title="home_page_features.Home_Page_Malaria" hash-for-method="DashboardTest">DashboardTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestNG_Test_Suite" title="post_mal_features.AddPost" hash-for-method="addpostTest(The Title, Description of post)">addpostTest(The Title, Description of post)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestNG_Test_Suite" title="post_mal_features.AddPost" hash-for-method="addpostTest(Peace Corps, New peace corps post)">addpostTest(Peace Corps, New peace corps post)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestNG_Test_Suite" title="post_mal_features.AddPost" hash-for-method="addpostTest(@;&#039;:”, Characters;)">addpostTest(@;':”, Characters;)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestNG_Test_Suite" title="post_mal_features.AddPost" hash-for-method="addpostTest(Testing, )">addpostTest(Testing, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestNG_Test_Suite" title="post_pcsa_features.AddPost" hash-for-method="addpostTest(Testing, )">addpostTest(Testing, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestNG_Test_Suite" title="post_pcsa_features.AddPost" hash-for-method="addpostTest(The Title, Description of post)">addpostTest(The Title, Description of post)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestNG_Test_Suite" title="post_pcsa_features.AddPost" hash-for-method="addpostTest(Peace Corps, New peace corps post)">addpostTest(Peace Corps, New peace corps post)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestNG_Test_Suite" title="post_pcsa_features.AddPost" hash-for-method="addpostTest(@;&#039;:”, Characters;)">addpostTest(@;':”, Characters;)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestNG_Test_Suite" title="post_mal_features.CancelAddPost" hash-for-method="canceladdpost">canceladdpost</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestNG_Test_Suite" title="post_pcsa_features.CancelAddPost" hash-for-method="canceladdpost">canceladdpost</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestNG_Test_Suite" title="home_page_features.ChangePassword" hash-for-method="changePassword(nopassword, mypassword, yespassword)">changePassword(nopassword, mypassword, yespassword)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestNG_Test_Suite" title="home_page_features.ChangePassword" hash-for-method="changePassword(mypassword, nopassword, nopassword)">changePassword(mypassword, nopassword, nopassword)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestNG_Test_Suite" title="home_page_features.ChangePassword" hash-for-method="changePassword(whatpassword, howpassword, nopassword)">changePassword(whatpassword, howpassword, nopassword)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestNG_Test_Suite" title="home_page_features.ChangePassword" hash-for-method="changePassword(yespassword, whopassword, whatpassword)">changePassword(yespassword, whopassword, whatpassword)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestNG_Test_Suite" title="post_mal_features.DeletePost" hash-for-method="deletepost">deletepost</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestNG_Test_Suite" title="post_pcsa_features.DeletePost" hash-for-method="deletepost">deletepost</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestNG_Test_Suite" title="home_page_features.EditProfile" hash-for-method="editProfile(, ;l,;&#039;, , adsf, dfsfa, aadsf)">editProfile(, ;l,;', , adsf, dfsfa, aadsf)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestNG_Test_Suite" title="home_page_features.EditProfile" hash-for-method="editProfile(sds, Nkweteyim, , email@email.com, Male, here)">editProfile(sds, Nkweteyim, , email@email.com, Male, here)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestNG_Test_Suite" title="home_page_features.EditProfile" hash-for-method="editProfile(Daisy, dsf, No mobile, someemail, Female, somewhere)">editProfile(Daisy, dsf, No mobile, someemail, Female, somewhere)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestNG_Test_Suite" title="home_page_features.EditProfile" hash-for-method="editProfile(Daisy, Nkweteyim, asdf, amial@mail.com, Noanswer, anywhere)">editProfile(Daisy, Nkweteyim, asdf, amial@mail.com, Noanswer, anywhere)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestNG_Test_Suite" title="post_mal_features.EditPost" hash-for-method="editpost(Testing, )">editpost(Testing, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestNG_Test_Suite" title="post_mal_features.EditPost" hash-for-method="editpost(@;&#039;:”, Characters;)">editpost(@;':”, Characters;)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestNG_Test_Suite" title="post_mal_features.EditPost" hash-for-method="editpost(Peace Corps, New peace corps post)">editpost(Peace Corps, New peace corps post)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestNG_Test_Suite" title="post_mal_features.EditPost" hash-for-method="editpost(The Title, Description of post)">editpost(The Title, Description of post)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestNG_Test_Suite" title="post_pcsa_features.EditPost" hash-for-method="editpost(Peace Corps, New peace corps post)">editpost(Peace Corps, New peace corps post)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestNG_Test_Suite" title="post_pcsa_features.EditPost" hash-for-method="editpost(Testing, )">editpost(Testing, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestNG_Test_Suite" title="post_pcsa_features.EditPost" hash-for-method="editpost(The Title, Description of post)">editpost(The Title, Description of post)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestNG_Test_Suite" title="post_pcsa_features.EditPost" hash-for-method="editpost(@;&#039;:”, Characters;)">editpost(@;':”, Characters;)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestNG_Test_Suite" title="home_page_features.Help" hash-for-method="helpTest">helpTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestNG_Test_Suite" title="home_page_features.ImportantDetails" hash-for-method="importantDetailsTest">importantDetailsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestNG_Test_Suite" title="home_page_features.Login" hash-for-method="login(tahirih, )">login(tahirih, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestNG_Test_Suite" title="home_page_features.Login" hash-for-method="login(hello, hi)">login(hello, hi)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestNG_Test_Suite" title="home_page_features.Login" hash-for-method="login(daisy, password)">login(daisy, password)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestNG_Test_Suite" title="home_page_features.Login" hash-for-method="login(daisyab, mypassword)">login(daisyab, mypassword)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestNG_Test_Suite" title="home_page_features.Login" hash-for-method="login(admin, mypassword)">login(admin, mypassword)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestNG_Test_Suite" title="home_page_features.AboutPeaceCorps" hash-for-method="peaceCorpsTest">peaceCorpsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestNG_Test_Suite" title="home_page_features.Policies" hash-for-method="policiesTest">policiesTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestNG_Test_Suite" title="home_page_features.Signup" hash-for-method="signup(M, person, person, person, person, person, person, person, person)">signup(M, person, person, person, person, person, person, person, person)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestNG_Test_Suite" title="home_page_features.Signup" hash-for-method="signup(F, person1, person1@email.com, person1, person1, person1, person, , text)">signup(F, person1, person1@email.com, person1, person1, person1, person, , text)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestNG_Test_Suite" title="home_page_features.Signup" hash-for-method="signup(M, person2, person2@gmail.com, person2, , person2, person2, , somewhere)">signup(M, person2, person2@gmail.com, person2, , person2, person2, , somewhere)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestNG_Test_Suite" title="post_mal_features.ViewPost" hash-for-method="viewpost">viewpost</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestNG_Test_Suite" title="post_pcsa_features.ViewPost" hash-for-method="viewpost">viewpost</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-TestNG_Test_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-TestNG_Test_Suite" class="panel TestNG_Test_Suite">
+          <div class="suite-TestNG_Test_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">post_pcsa_features.EditPost</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="editpost(Peace Corps, New peace corps post)">
+                  </a> <!-- editpost(Peace Corps, New peace corps post) -->
+                  <span class="method-name">editpost</span>
+                  <span class="parameters">(Peace Corps, New peace corps post)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editpost(Testing, )">
+                  </a> <!-- editpost(Testing, ) -->
+                  <span class="method-name">editpost</span>
+                  <span class="parameters">(Testing, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editpost(The Title, Description of post)">
+                  </a> <!-- editpost(The Title, Description of post) -->
+                  <span class="method-name">editpost</span>
+                  <span class="parameters">(The Title, Description of post)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editpost(@;&#039;:”, Characters;)">
+                  </a> <!-- editpost(@;':”, Characters;) -->
+                  <span class="method-name">editpost</span>
+                  <span class="parameters">(@;':”, Characters;)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNG_Test_Suite-class-skipped -->
+          <div class="suite-TestNG_Test_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">post_pcsa_features.ViewPost</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="viewpost">
+                  </a> <!-- viewpost -->
+                  <span class="method-name">viewpost</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNG_Test_Suite-class-skipped -->
+          <div class="suite-TestNG_Test_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">post_mal_features.ViewPost</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="viewpost">
+                  </a> <!-- viewpost -->
+                  <span class="method-name">viewpost</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNG_Test_Suite-class-skipped -->
+          <div class="suite-TestNG_Test_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">home_page_features.Policies</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="policiesTest">
+                  </a> <!-- policiesTest -->
+                  <span class="method-name">policiesTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNG_Test_Suite-class-skipped -->
+          <div class="suite-TestNG_Test_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">home_page_features.EditProfile</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="editProfile(, ;l,;&#039;, , adsf, dfsfa, aadsf)">
+                  </a> <!-- editProfile(, ;l,;', , adsf, dfsfa, aadsf) -->
+                  <span class="method-name">editProfile</span>
+                  <span class="parameters">(, ;l,;', , adsf, dfsfa, aadsf)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editProfile(sds, Nkweteyim, , email@email.com, Male, here)">
+                  </a> <!-- editProfile(sds, Nkweteyim, , email@email.com, Male, here) -->
+                  <span class="method-name">editProfile</span>
+                  <span class="parameters">(sds, Nkweteyim, , email@email.com, Male, here)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editProfile(Daisy, dsf, No mobile, someemail, Female, somewhere)">
+                  </a> <!-- editProfile(Daisy, dsf, No mobile, someemail, Female, somewhere) -->
+                  <span class="method-name">editProfile</span>
+                  <span class="parameters">(Daisy, dsf, No mobile, someemail, Female, somewhere)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editProfile(Daisy, Nkweteyim, asdf, amial@mail.com, Noanswer, anywhere)">
+                  </a> <!-- editProfile(Daisy, Nkweteyim, asdf, amial@mail.com, Noanswer, anywhere) -->
+                  <span class="method-name">editProfile</span>
+                  <span class="parameters">(Daisy, Nkweteyim, asdf, amial@mail.com, Noanswer, anywhere)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNG_Test_Suite-class-skipped -->
+          <div class="suite-TestNG_Test_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">home_page_features.Home_Page_Malaria</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="DashboardTest">
+                  </a> <!-- DashboardTest -->
+                  <span class="method-name">DashboardTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNG_Test_Suite-class-skipped -->
+          <div class="suite-TestNG_Test_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">post_mal_features.CancelAddPost</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="canceladdpost">
+                  </a> <!-- canceladdpost -->
+                  <span class="method-name">canceladdpost</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNG_Test_Suite-class-skipped -->
+          <div class="suite-TestNG_Test_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">post_mal_features.EditPost</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="editpost(Testing, )">
+                  </a> <!-- editpost(Testing, ) -->
+                  <span class="method-name">editpost</span>
+                  <span class="parameters">(Testing, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editpost(@;&#039;:”, Characters;)">
+                  </a> <!-- editpost(@;':”, Characters;) -->
+                  <span class="method-name">editpost</span>
+                  <span class="parameters">(@;':”, Characters;)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editpost(Peace Corps, New peace corps post)">
+                  </a> <!-- editpost(Peace Corps, New peace corps post) -->
+                  <span class="method-name">editpost</span>
+                  <span class="parameters">(Peace Corps, New peace corps post)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editpost(The Title, Description of post)">
+                  </a> <!-- editpost(The Title, Description of post) -->
+                  <span class="method-name">editpost</span>
+                  <span class="parameters">(The Title, Description of post)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNG_Test_Suite-class-skipped -->
+          <div class="suite-TestNG_Test_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">home_page_features.Signup</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="signup(M, person, person, person, person, person, person, person, person)">
+                  </a> <!-- signup(M, person, person, person, person, person, person, person, person) -->
+                  <span class="method-name">signup</span>
+                  <span class="parameters">(M, person, person, person, person, person, person, person, person)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="signup(F, person1, person1@email.com, person1, person1, person1, person, , text)">
+                  </a> <!-- signup(F, person1, person1@email.com, person1, person1, person1, person, , text) -->
+                  <span class="method-name">signup</span>
+                  <span class="parameters">(F, person1, person1@email.com, person1, person1, person1, person, , text)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="signup(M, person2, person2@gmail.com, person2, , person2, person2, , somewhere)">
+                  </a> <!-- signup(M, person2, person2@gmail.com, person2, , person2, person2, , somewhere) -->
+                  <span class="method-name">signup</span>
+                  <span class="parameters">(M, person2, person2@gmail.com, person2, , person2, person2, , somewhere)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNG_Test_Suite-class-skipped -->
+          <div class="suite-TestNG_Test_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">post_pcsa_features.AddPost</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addpostTest(Testing, )">
+                  </a> <!-- addpostTest(Testing, ) -->
+                  <span class="method-name">addpostTest</span>
+                  <span class="parameters">(Testing, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addpostTest(The Title, Description of post)">
+                  </a> <!-- addpostTest(The Title, Description of post) -->
+                  <span class="method-name">addpostTest</span>
+                  <span class="parameters">(The Title, Description of post)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addpostTest(Peace Corps, New peace corps post)">
+                  </a> <!-- addpostTest(Peace Corps, New peace corps post) -->
+                  <span class="method-name">addpostTest</span>
+                  <span class="parameters">(Peace Corps, New peace corps post)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addpostTest(@;&#039;:”, Characters;)">
+                  </a> <!-- addpostTest(@;':”, Characters;) -->
+                  <span class="method-name">addpostTest</span>
+                  <span class="parameters">(@;':”, Characters;)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNG_Test_Suite-class-skipped -->
+          <div class="suite-TestNG_Test_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">post_pcsa_features.DeletePost</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="deletepost">
+                  </a> <!-- deletepost -->
+                  <span class="method-name">deletepost</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNG_Test_Suite-class-skipped -->
+          <div class="suite-TestNG_Test_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">home_page_features.ImportantDetails</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="importantDetailsTest">
+                  </a> <!-- importantDetailsTest -->
+                  <span class="method-name">importantDetailsTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNG_Test_Suite-class-skipped -->
+          <div class="suite-TestNG_Test_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">home_page_features.Help</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="helpTest">
+                  </a> <!-- helpTest -->
+                  <span class="method-name">helpTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNG_Test_Suite-class-skipped -->
+          <div class="suite-TestNG_Test_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">post_mal_features.DeletePost</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="deletepost">
+                  </a> <!-- deletepost -->
+                  <span class="method-name">deletepost</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNG_Test_Suite-class-skipped -->
+          <div class="suite-TestNG_Test_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">post_pcsa_features.CancelAddPost</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="canceladdpost">
+                  </a> <!-- canceladdpost -->
+                  <span class="method-name">canceladdpost</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNG_Test_Suite-class-skipped -->
+          <div class="suite-TestNG_Test_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">home_page_features.ChangePassword</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="changePassword(nopassword, mypassword, yespassword)">
+                  </a> <!-- changePassword(nopassword, mypassword, yespassword) -->
+                  <span class="method-name">changePassword</span>
+                  <span class="parameters">(nopassword, mypassword, yespassword)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="changePassword(mypassword, nopassword, nopassword)">
+                  </a> <!-- changePassword(mypassword, nopassword, nopassword) -->
+                  <span class="method-name">changePassword</span>
+                  <span class="parameters">(mypassword, nopassword, nopassword)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="changePassword(whatpassword, howpassword, nopassword)">
+                  </a> <!-- changePassword(whatpassword, howpassword, nopassword) -->
+                  <span class="method-name">changePassword</span>
+                  <span class="parameters">(whatpassword, howpassword, nopassword)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="changePassword(yespassword, whopassword, whatpassword)">
+                  </a> <!-- changePassword(yespassword, whopassword, whatpassword) -->
+                  <span class="method-name">changePassword</span>
+                  <span class="parameters">(yespassword, whopassword, whatpassword)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNG_Test_Suite-class-skipped -->
+          <div class="suite-TestNG_Test_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">post_mal_features.AddPost</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addpostTest(The Title, Description of post)">
+                  </a> <!-- addpostTest(The Title, Description of post) -->
+                  <span class="method-name">addpostTest</span>
+                  <span class="parameters">(The Title, Description of post)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addpostTest(Peace Corps, New peace corps post)">
+                  </a> <!-- addpostTest(Peace Corps, New peace corps post) -->
+                  <span class="method-name">addpostTest</span>
+                  <span class="parameters">(Peace Corps, New peace corps post)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addpostTest(@;&#039;:”, Characters;)">
+                  </a> <!-- addpostTest(@;':”, Characters;) -->
+                  <span class="method-name">addpostTest</span>
+                  <span class="parameters">(@;':”, Characters;)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addpostTest(Testing, )">
+                  </a> <!-- addpostTest(Testing, ) -->
+                  <span class="method-name">addpostTest</span>
+                  <span class="parameters">(Testing, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNG_Test_Suite-class-skipped -->
+          <div class="suite-TestNG_Test_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">home_page_features.Login</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="login(tahirih, )">
+                  </a> <!-- login(tahirih, ) -->
+                  <span class="method-name">login</span>
+                  <span class="parameters">(tahirih, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login(hello, hi)">
+                  </a> <!-- login(hello, hi) -->
+                  <span class="method-name">login</span>
+                  <span class="parameters">(hello, hi)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login(daisy, password)">
+                  </a> <!-- login(daisy, password) -->
+                  <span class="method-name">login</span>
+                  <span class="parameters">(daisy, password)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login(daisyab, mypassword)">
+                  </a> <!-- login(daisyab, mypassword) -->
+                  <span class="method-name">login</span>
+                  <span class="parameters">(daisyab, mypassword)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login(admin, mypassword)">
+                  </a> <!-- login(admin, mypassword) -->
+                  <span class="method-name">login</span>
+                  <span class="parameters">(admin, mypassword)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNG_Test_Suite-class-skipped -->
+          <div class="suite-TestNG_Test_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">home_page_features.AboutPeaceCorps</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="peaceCorpsTest">
+                  </a> <!-- peaceCorpsTest -->
+                  <span class="method-name">peaceCorpsTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNG_Test_Suite-class-skipped -->
+        </div> <!-- panel TestNG_Test_Suite -->
+        <div panel-name="test-xml-TestNG_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/home/krys/automated-testing/MACCTests/src/utilities/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;TestNG Test Suite&quot;&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;IE&quot;/&gt;
+  &lt;test name=&quot;Credentials&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;home_page_features.Login&quot;/&gt;
+      &lt;class name=&quot;home_page_features.Logout&quot;/&gt;
+      &lt;class name=&quot;home_page_features.Signup&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Credentials --&gt;
+  &lt;test name=&quot;HomePageTests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;home_page_features.AboutPeaceCorps&quot;/&gt;
+      &lt;class name=&quot;home_page_features.Policies&quot;/&gt;
+      &lt;class name=&quot;home_page_features.ImportantDetails&quot;/&gt;
+      &lt;class name=&quot;home_page_features.Help&quot;/&gt;
+      &lt;class name=&quot;home_page_features.Home_Page_Malaria&quot;/&gt;
+      &lt;class name=&quot;home_page_features.EditProfile&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- HomePageTests --&gt;
+  &lt;test name=&quot;Regression&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;post_mal_features.AddPost&quot;/&gt;
+      &lt;class name=&quot;post_mal_features.CancelAddPost&quot;/&gt;
+      &lt;class name=&quot;post_mal_features.DeletePost&quot;/&gt;
+      &lt;class name=&quot;post_mal_features.EditPost&quot;/&gt;
+      &lt;class name=&quot;post_mal_features.ViewPost&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Regression --&gt;
+  &lt;test name=&quot;Regression2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;post_pcsa_features.AddPost&quot;/&gt;
+      &lt;class name=&quot;post_pcsa_features.CancelAddPost&quot;/&gt;
+      &lt;class name=&quot;post_pcsa_features.DeletePost&quot;/&gt;
+      &lt;class name=&quot;post_pcsa_features.EditPost&quot;/&gt;
+      &lt;class name=&quot;post_pcsa_features.ViewPost&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Regression2 --&gt;
+  &lt;test name=&quot;Database&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;database_tests.DBTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Database --&gt;
+  &lt;test name=&quot;ChangePass&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;home_page_features.ChangePassword&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ChangePass --&gt;
+&lt;/suite&gt; &lt;!-- TestNG Test Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-TestNG_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for TestNG Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Credentials (3 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">HomePageTests (6 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">Regression (5 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">Regression2 (5 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">Database (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">ChangePass (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-TestNG_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for TestNG Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-TestNG_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for TestNG Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_TestNG_Test_Suite');
+function tableData_TestNG_Test_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(43);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'login')
+data.setCell(0, 2, 'home_page_features.Login')
+data.setCell(0, 3, 1);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'editpost')
+data.setCell(1, 2, 'post_mal_features.EditPost')
+data.setCell(1, 3, 1);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'login')
+data.setCell(2, 2, 'home_page_features.Login')
+data.setCell(2, 3, 0);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'login')
+data.setCell(3, 2, 'home_page_features.Login')
+data.setCell(3, 3, 0);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'signup')
+data.setCell(4, 2, 'home_page_features.Signup')
+data.setCell(4, 3, 0);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'login')
+data.setCell(5, 2, 'home_page_features.Login')
+data.setCell(5, 3, 0);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'signup')
+data.setCell(6, 2, 'home_page_features.Signup')
+data.setCell(6, 3, 0);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'signup')
+data.setCell(7, 2, 'home_page_features.Signup')
+data.setCell(7, 3, 0);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'login')
+data.setCell(8, 2, 'home_page_features.Login')
+data.setCell(8, 3, 0);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'editProfile')
+data.setCell(9, 2, 'home_page_features.EditProfile')
+data.setCell(9, 3, 0);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'importantDetailsTest')
+data.setCell(10, 2, 'home_page_features.ImportantDetails')
+data.setCell(10, 3, 0);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'policiesTest')
+data.setCell(11, 2, 'home_page_features.Policies')
+data.setCell(11, 3, 0);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'peaceCorpsTest')
+data.setCell(12, 2, 'home_page_features.AboutPeaceCorps')
+data.setCell(12, 3, 0);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'DashboardTest')
+data.setCell(13, 2, 'home_page_features.Home_Page_Malaria')
+data.setCell(13, 3, 0);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'editProfile')
+data.setCell(14, 2, 'home_page_features.EditProfile')
+data.setCell(14, 3, 0);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'helpTest')
+data.setCell(15, 2, 'home_page_features.Help')
+data.setCell(15, 3, 0);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'editProfile')
+data.setCell(16, 2, 'home_page_features.EditProfile')
+data.setCell(16, 3, 0);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'editProfile')
+data.setCell(17, 2, 'home_page_features.EditProfile')
+data.setCell(17, 3, 0);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'editpost')
+data.setCell(18, 2, 'post_mal_features.EditPost')
+data.setCell(18, 3, 0);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'addpostTest')
+data.setCell(19, 2, 'post_mal_features.AddPost')
+data.setCell(19, 3, 0);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'viewpost')
+data.setCell(20, 2, 'post_mal_features.ViewPost')
+data.setCell(20, 3, 0);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'addpostTest')
+data.setCell(21, 2, 'post_mal_features.AddPost')
+data.setCell(21, 3, 0);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'addpostTest')
+data.setCell(22, 2, 'post_mal_features.AddPost')
+data.setCell(22, 3, 0);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'addpostTest')
+data.setCell(23, 2, 'post_mal_features.AddPost')
+data.setCell(23, 3, 0);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'editpost')
+data.setCell(24, 2, 'post_mal_features.EditPost')
+data.setCell(24, 3, 0);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'editpost')
+data.setCell(25, 2, 'post_mal_features.EditPost')
+data.setCell(25, 3, 0);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'deletepost')
+data.setCell(26, 2, 'post_mal_features.DeletePost')
+data.setCell(26, 3, 0);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'canceladdpost')
+data.setCell(27, 2, 'post_mal_features.CancelAddPost')
+data.setCell(27, 3, 0);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'addpostTest')
+data.setCell(28, 2, 'post_pcsa_features.AddPost')
+data.setCell(28, 3, 0);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'addpostTest')
+data.setCell(29, 2, 'post_pcsa_features.AddPost')
+data.setCell(29, 3, 0);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'editpost')
+data.setCell(30, 2, 'post_pcsa_features.EditPost')
+data.setCell(30, 3, 0);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'viewpost')
+data.setCell(31, 2, 'post_pcsa_features.ViewPost')
+data.setCell(31, 3, 0);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'editpost')
+data.setCell(32, 2, 'post_pcsa_features.EditPost')
+data.setCell(32, 3, 0);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'deletepost')
+data.setCell(33, 2, 'post_pcsa_features.DeletePost')
+data.setCell(33, 3, 0);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'editpost')
+data.setCell(34, 2, 'post_pcsa_features.EditPost')
+data.setCell(34, 3, 0);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'editpost')
+data.setCell(35, 2, 'post_pcsa_features.EditPost')
+data.setCell(35, 3, 0);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'addpostTest')
+data.setCell(36, 2, 'post_pcsa_features.AddPost')
+data.setCell(36, 3, 0);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'addpostTest')
+data.setCell(37, 2, 'post_pcsa_features.AddPost')
+data.setCell(37, 3, 0);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'canceladdpost')
+data.setCell(38, 2, 'post_pcsa_features.CancelAddPost')
+data.setCell(38, 3, 0);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'changePassword')
+data.setCell(39, 2, 'home_page_features.ChangePassword')
+data.setCell(39, 3, 0);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'changePassword')
+data.setCell(40, 2, 'home_page_features.ChangePassword')
+data.setCell(40, 3, 0);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'changePassword')
+data.setCell(41, 2, 'home_page_features.ChangePassword')
+data.setCell(41, 3, 0);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'changePassword')
+data.setCell(42, 2, 'home_page_features.ChangePassword')
+data.setCell(42, 3, 0);
+window.suiteTableData['TestNG_Test_Suite']= { tableData: data, tableDiv: 'times-div-TestNG_Test_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 2 ms</span>
+              <div id="times-div-TestNG_Test_Suite">
+              </div> <!-- times-div-TestNG_Test_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-TestNG_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for TestNG Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-TestNG_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-TestNG_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">home_page_features.Login</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">start(IE)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">login(admin, mypassword)</span>
+                <span class="method-start">347 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">login(daisyab, mypassword)</span>
+                <span class="method-start">347 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">login(daisy, password)</span>
+                <span class="method-start">348 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">login(hello, hi)</span>
+                <span class="method-start">348 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">login(tahirih, )</span>
+                <span class="method-start">349 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">home_page_features.Signup</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">signup(M, person, person, person, person, person, person, person, person)</span>
+                <span class="method-start">521 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">signup(F, person1, person1@email.com, person1, person1, person1, person, , text)</span>
+                <span class="method-start">522 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">signup(M, person2, person2@gmail.com, person2, , person2, person2, , somewhere)</span>
+                <span class="method-start">523 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">home_page_features.AboutPeaceCorps</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">590 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">peaceCorpsTest</span>
+                <span class="method-start">27715 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">home_page_features.Policies</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">policiesTest</span>
+                <span class="method-start">27717 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">home_page_features.ImportantDetails</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">importantDetailsTest</span>
+                <span class="method-start">27718 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">home_page_features.Help</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">helpTest</span>
+                <span class="method-start">27719 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">home_page_features.Home_Page_Malaria</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">DashboardTest</span>
+                <span class="method-start">27721 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">home_page_features.EditProfile</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">editProfile(Daisy, dsf, No mobile, someemail, Female, somewhere)</span>
+                <span class="method-start">27923 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">editProfile(sds, Nkweteyim, , email@email.com, Male, here)</span>
+                <span class="method-start">27924 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">editProfile(, ;l,;', , adsf, dfsfa, aadsf)</span>
+                <span class="method-start">27925 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">editProfile(Daisy, Nkweteyim, asdf, amial@mail.com, Noanswer, anywhere)</span>
+                <span class="method-start">27926 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">post_mal_features.AddPost</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">28107 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addpostTest(The Title, Description of post)</span>
+                <span class="method-start">45178 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addpostTest(Peace Corps, New peace corps post)</span>
+                <span class="method-start">45179 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addpostTest(Testing, )</span>
+                <span class="method-start">45180 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addpostTest(@;':”, Characters;)</span>
+                <span class="method-start">45181 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">post_mal_features.CancelAddPost</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">canceladdpost</span>
+                <span class="method-start">45182 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">post_mal_features.DeletePost</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">deletepost</span>
+                <span class="method-start">45184 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">post_mal_features.EditPost</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">editpost(The Title, Description of post)</span>
+                <span class="method-start">45301 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">editpost(Peace Corps, New peace corps post)</span>
+                <span class="method-start">45302 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">editpost(Testing, )</span>
+                <span class="method-start">45303 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">editpost(@;':”, Characters;)</span>
+                <span class="method-start">45303 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">post_mal_features.ViewPost</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">viewpost</span>
+                <span class="method-start">45305 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">post_pcsa_features.AddPost</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">45444 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addpostTest(The Title, Description of post)</span>
+                <span class="method-start">56042 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addpostTest(Peace Corps, New peace corps post)</span>
+                <span class="method-start">56044 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addpostTest(Testing, )</span>
+                <span class="method-start">56045 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addpostTest(@;':”, Characters;)</span>
+                <span class="method-start">56046 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">post_pcsa_features.CancelAddPost</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">canceladdpost</span>
+                <span class="method-start">56048 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">post_pcsa_features.DeletePost</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">deletepost</span>
+                <span class="method-start">56050 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">post_pcsa_features.EditPost</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">editpost(The Title, Description of post)</span>
+                <span class="method-start">56137 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">editpost(Peace Corps, New peace corps post)</span>
+                <span class="method-start">56137 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">editpost(Testing, )</span>
+                <span class="method-start">56138 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">editpost(@;':”, Characters;)</span>
+                <span class="method-start">56139 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">post_pcsa_features.ViewPost</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">viewpost</span>
+                <span class="method-start">56140 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">home_page_features.ChangePassword</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">56267 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">changePassword(mypassword, nopassword, nopassword)</span>
+                <span class="method-start">66982 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">changePassword(nopassword, mypassword, yespassword)</span>
+                <span class="method-start">66983 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">changePassword(yespassword, whopassword, whatpassword)</span>
+                <span class="method-start">66984 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">changePassword(whatpassword, howpassword, nopassword)</span>
+                <span class="method-start">66984 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

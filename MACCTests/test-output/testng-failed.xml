@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TestNG Test Suite]">
+  <parameter name="browser" value="IE"/>
+  <test name="Credentials(failed)">
+    <classes>
+      <class name="home_page_features.ChangePassword">
+        <methods>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- home_page_features.ChangePassword -->
+      <class name="post_mal_features.AddPost">
+        <methods>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- post_mal_features.AddPost -->
+      <class name="home_page_features.Signup">
+        <methods>
+          <include name="signup"/>
+        </methods>
+      </class> <!-- home_page_features.Signup -->
+      <class name="home_page_features.Login">
+        <methods>
+          <include name="start"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- home_page_features.Login -->
+      <class name="home_page_features.AboutPeaceCorps">
+        <methods>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- home_page_features.AboutPeaceCorps -->
+      <class name="post_pcsa_features.AddPost">
+        <methods>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- post_pcsa_features.AddPost -->
+    </classes>
+  </test> <!-- Credentials(failed) -->
+  <test name="HomePageTests(failed)">
+    <classes>
+      <class name="home_page_features.ImportantDetails">
+        <methods>
+          <include name="importantDetailsTest"/>
+        </methods>
+      </class> <!-- home_page_features.ImportantDetails -->
+      <class name="home_page_features.Help">
+        <methods>
+          <include name="helpTest"/>
+        </methods>
+      </class> <!-- home_page_features.Help -->
+      <class name="home_page_features.ChangePassword">
+        <methods>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- home_page_features.ChangePassword -->
+      <class name="home_page_features.Policies">
+        <methods>
+          <include name="policiesTest"/>
+        </methods>
+      </class> <!-- home_page_features.Policies -->
+      <class name="post_mal_features.AddPost">
+        <methods>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- post_mal_features.AddPost -->
+      <class name="home_page_features.EditProfile">
+        <methods>
+          <include name="editProfile"/>
+        </methods>
+      </class> <!-- home_page_features.EditProfile -->
+      <class name="home_page_features.Home_Page_Malaria">
+        <methods>
+          <include name="DashboardTest"/>
+        </methods>
+      </class> <!-- home_page_features.Home_Page_Malaria -->
+      <class name="home_page_features.Login">
+        <methods>
+          <include name="start"/>
+        </methods>
+      </class> <!-- home_page_features.Login -->
+      <class name="post_pcsa_features.AddPost">
+        <methods>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- post_pcsa_features.AddPost -->
+      <class name="home_page_features.AboutPeaceCorps">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="peaceCorpsTest"/>
+        </methods>
+      </class> <!-- home_page_features.AboutPeaceCorps -->
+    </classes>
+  </test> <!-- HomePageTests(failed) -->
+  <test name="Regression(failed)">
+    <classes>
+      <class name="post_mal_features.ViewPost">
+        <methods>
+          <include name="viewpost"/>
+        </methods>
+      </class> <!-- post_mal_features.ViewPost -->
+      <class name="home_page_features.ChangePassword">
+        <methods>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- home_page_features.ChangePassword -->
+      <class name="post_mal_features.DeletePost">
+        <methods>
+          <include name="deletepost"/>
+        </methods>
+      </class> <!-- post_mal_features.DeletePost -->
+      <class name="post_mal_features.AddPost">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="addpostTest"/>
+        </methods>
+      </class> <!-- post_mal_features.AddPost -->
+      <class name="post_mal_features.CancelAddPost">
+        <methods>
+          <include name="canceladdpost"/>
+        </methods>
+      </class> <!-- post_mal_features.CancelAddPost -->
+      <class name="post_mal_features.EditPost">
+        <methods>
+          <include name="editpost"/>
+        </methods>
+      </class> <!-- post_mal_features.EditPost -->
+      <class name="home_page_features.Login">
+        <methods>
+          <include name="start"/>
+        </methods>
+      </class> <!-- home_page_features.Login -->
+      <class name="home_page_features.AboutPeaceCorps">
+        <methods>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- home_page_features.AboutPeaceCorps -->
+      <class name="post_pcsa_features.AddPost">
+        <methods>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- post_pcsa_features.AddPost -->
+    </classes>
+  </test> <!-- Regression(failed) -->
+  <test name="Regression2(failed)">
+    <classes>
+      <class name="post_pcsa_features.EditPost">
+        <methods>
+          <include name="editpost"/>
+        </methods>
+      </class> <!-- post_pcsa_features.EditPost -->
+      <class name="post_pcsa_features.ViewPost">
+        <methods>
+          <include name="viewpost"/>
+        </methods>
+      </class> <!-- post_pcsa_features.ViewPost -->
+      <class name="home_page_features.ChangePassword">
+        <methods>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- home_page_features.ChangePassword -->
+      <class name="post_pcsa_features.CancelAddPost">
+        <methods>
+          <include name="canceladdpost"/>
+        </methods>
+      </class> <!-- post_pcsa_features.CancelAddPost -->
+      <class name="post_mal_features.AddPost">
+        <methods>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- post_mal_features.AddPost -->
+      <class name="home_page_features.Login">
+        <methods>
+          <include name="start"/>
+        </methods>
+      </class> <!-- home_page_features.Login -->
+      <class name="home_page_features.AboutPeaceCorps">
+        <methods>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- home_page_features.AboutPeaceCorps -->
+      <class name="post_pcsa_features.DeletePost">
+        <methods>
+          <include name="deletepost"/>
+        </methods>
+      </class> <!-- post_pcsa_features.DeletePost -->
+      <class name="post_pcsa_features.AddPost">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="addpostTest"/>
+        </methods>
+      </class> <!-- post_pcsa_features.AddPost -->
+    </classes>
+  </test> <!-- Regression2(failed) -->
+  <test name="ChangePass(failed)">
+    <classes>
+      <class name="home_page_features.ChangePassword">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="changePassword"/>
+        </methods>
+      </class> <!-- home_page_features.ChangePassword -->
+      <class name="post_mal_features.AddPost">
+        <methods>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- post_mal_features.AddPost -->
+      <class name="home_page_features.Login">
+        <methods>
+          <include name="start"/>
+        </methods>
+      </class> <!-- home_page_features.Login -->
+      <class name="home_page_features.AboutPeaceCorps">
+        <methods>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- home_page_features.AboutPeaceCorps -->
+      <class name="post_pcsa_features.AddPost">
+        <methods>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- post_pcsa_features.AddPost -->
+    </classes>
+  </test> <!-- ChangePass(failed) -->
+</suite> <!-- Failed suite [TestNG Test Suite] -->
